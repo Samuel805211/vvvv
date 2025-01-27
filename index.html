@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Hacker Style</title>
+    <style>
+        body {
+            background-image: url("img/mana.gif");
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto; /* Adiciona a barra de rolagem */
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px; /* Para afastar o conteúdo das bordas */
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      border: 2px solid #0f0;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px #0f0;
+      z-index: 1000;
+      animation: hacker-glow 1.5s infinite alternate;
+      background-image:url("img/naruto.gif");
+      background-position:center;
+    }
+
+    @keyframes hacker-glow {
+      from {
+        box-shadow: 0 0 10px #0f0;
+      }
+      to {
+        box-shadow: 0 0 30px #0f0;
+      }
+    }
+
+    .loading-bar {
+      margin-top: 20px;
+      width: 100%;
+      height: 10px;
+      background-color: #222;
+      overflow: hidden;
+      border: 1px solid #0f0;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .loading-bar .progress {
+      width: 0%;
+      height: 100%;
+      background-color: #0f0;
+      animation: loading 10s linear forwards;
+    }
+
+    @keyframes loading {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #00ff00;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+        }
+
+        /* Redes sociais */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Espaçamento entre botões */
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            background-color: red;
+            padding: 8px 15px; /* Botões menores */
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px; /* Texto menor */
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            background-color: darkred;
+        }
+    .ola{
+        background-image:url("img/you.png")
+        
+    }
+    .insta{
+        background-image:url("img/insta.jpeg")
+    }
+    .samuel{
+        background-image:url("img/you.png")
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="popup" id="hackerPopup">
+    <p>Carregando...</p>
+    <div class="loading-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+
+    <div class="container">
+        <!-- Links das redes sociais -->
+        <div class="social-links">
+            <a class="ola" href="https://youtube.com/@vitorxrichard?si=Zf6wIeipZQ1ygZpm/vídeo?sub_confirmation=1" target="_blank">YouTube</a>
+            <a class="insta"href="https://www.instagram.com/l_l_vitor_l_l?igsh=MWN2cjZlcXczcDI0Yg=="target="_blank">instagram</a>
+            <a href="https://www.threads.net/@l_l_vitor_l_l" target="_blank">threads</a>
+        </div>
+
+        <!-- Formulário de login -->
+        <h1>Login</h1>
+        <h3 style="color:white">Preencha as informações de login para acessar os melhores desenhos da sua vida!</h3>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <input type="submit" value="Entrar"><br>
+            Já tem conta? <a style="text-decoration: none; font-size:15px" href="#">Sim, cadastrar</a><br>
+            <a class="samuel"style="text-decoration: none; background: black; color: yellow; text-shadow:10px 10px 4px yellow;border-radius: 10px;width: 190px; border: 4px solid yellow; display: inline-block; padding: 5px;" href="#">LOGA ADM</a>
+        </form>
+    </div>
+    <script>
+    // Remove o popup após 10 segundos
+    setTimeout(() => {
+      const popup = document.getElementById('hackerPopup');
+      popup.style.display = 'none';
+    }, 10000); // 10000 ms = 10 segundos
+  </script>
+</body>
+</html>
